@@ -9,7 +9,7 @@ data = logo.content
 h = logo.headers
 print(f"{h.get('content-type')}")
 # print(data)
-#print(logo)
+# print(logo)
 with open("beta-logo.png","wb") as fo:
     fo.write(data)
 with open("beta-logo.png","rb") as fi:
