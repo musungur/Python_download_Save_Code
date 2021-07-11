@@ -7,9 +7,15 @@ url = "http://shelysafrica.com/images/shelys-logo/Shelys-AfricaLG.png"
 logo = requests.get(url)
 
 data = logo.content
-h = logo.headers
+# h = logo.headers
+headers = logo.headers
+headers_type = headers.get('content-type')
+
 path = os.getcwd()
-print(f"{h.get('content-type')}")
+# print(f"{h.get('content-type')}")
+print(f"\n{headers}")
+print(f"\n{headers_type}")
+
 # print(data)
 # print(logo)
 
